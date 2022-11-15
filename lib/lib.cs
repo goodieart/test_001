@@ -45,10 +45,7 @@ public class Arrays
         int result = 0;
         foreach (string item in inArray)
         {
-            if (item.Length <= maxItemLength)
-            {
-                result++;
-            }
+            if (item.Length <= maxItemLength) result++;
         }
         return result;
     }
