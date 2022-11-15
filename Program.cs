@@ -16,4 +16,17 @@ class Program
     {
         return Console.ReadLine()!.Split(separator, StringSplitOptions.RemoveEmptyEntries);
     }
+    /// <summary>
+    /// Метод выводит на экран содержимое переданного одномерного массива с вещественными числами
+    /// </summary>
+    /// <param name = "inArray">Массив, содержимое которого следует вывести на экран</param>
+    public static void PrintArray(string[] inArray)
+    {
+        Write("[");
+        for (int i = 0; i < inArray.Length; i++)
+        {
+            Write($"{inArray[i]}{(i < inArray.Length - 1 ? "," : "")}");
+        }
+        Write("]");
+    }
 }
