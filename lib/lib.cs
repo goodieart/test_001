@@ -9,7 +9,7 @@ public class Helper
     /// <param name = "separator">Строковый разделитель; символы между ними в исходной строке будут
     /// преобразованы в элементы результирующего массива</param>
     /// <param name = "prompt">Приглашение для пользователя</param>
-    /// <returns>Новый массив, заполненный преобразованными строковыми значениями в целочисленный тип</returns>
+    /// <returns>Новый массив, заполненный строковыми значениями</returns>
     public static string[] GetUserInput(string separator = ",", string prompt = "")
     {
         if (prompt != String.Empty) Write($"{prompt}: ");
@@ -20,7 +20,7 @@ public class Helper
 public class Arrays
 {
     /// <summary>
-    /// Метод выводит на экран содержимое переданного одномерного массива с вещественными числами
+    /// Метод выводит на экран содержимое переданного одномерного массива
     /// </summary>
     /// <param name = "inArray">Массив, содержимое которого следует вывести на экран</param>
     /// <param name = "prompt">Приглашение для пользователя</param>
